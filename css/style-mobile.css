@@ -1,109 +1,131 @@
 /*
-	Tessellate by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
+/* Basic */
 
-	body,input,textarea,select
-	{
+	body, input, select, textarea {
 		font-size: 11pt;
 	}
 
-	/* Sections/Article */
+	h2 {
+		font-size: 1.75em;
+		line-height: 1.35em;
+		letter-spacing: -0.025em;
+	}
 
-		section,
-		article,
-		.row > section,
-		.row > article
-		{
-			margin: 0 0 1.5em 0 !important;
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Section/Article */
+
+	header.major {
+		padding: 1em;
+	}
+
+		header.major h2, header.major p {
+			padding-left: 0.5em;
+			padding-right: 0.5em;
 		}
 
-	/* Button */
+/* Box */
 
-		.button
-		{
-			padding-left: 0;
-			padding-right: 0;
-			width: 100%;
-			max-width: 300px;
+	.box {
+		margin: 1em;
+		overflow-x: hidden;
+		padding: 2em 2em !important;
+	}
+
+		.box.features .features-row {
+			border-top: 0;
+			padding: 0;
 		}
 
-	/* List */
-
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-				padding-left: 0.35em;
-			}
-
-		ul.actions
-		{
-		}
-
-			ul.actions li
-			{
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
-		ul.menu
-		{
-		}
-
-			ul.menu li
-			{
+			.box.features .features-row section {
 				border: 0;
-				padding: 0;
-				display: block;
-				margin: 1em 0 1em 0;
+				border-top: solid 1px #e5e5e5 !important;
+				float: none;
+				margin: 2em 0 0 0 !important;
+				padding: 2em 0 0 0 !important;
+				width: 100%;
 			}
-	
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
 
-	#header
-	{
-		padding: 6em 20px 6em 20px;
+			.box.features .features-row:first-child section:first-child {
+				border-top: 0 !important;
+				margin-top: 0 !important;
+				padding-top: 0 !important;
+			}
+
+		.box .image.featured {
+			margin-left: -2em;
+			width: calc(100% + 4em);
+		}
+
+			.box .image.featured:first-child {
+				margin-bottom: 2em;
+				margin-top: -2em;
+			}
+
+			.box .image.featured:last-child {
+				margin-bottom: -2em;
+				margin-top: 2em;
+			}
+
+/* Banner */
+
+	#banner {
+		padding: 4em 0;
 	}
-	
-		#header > header
-		{
-			padding: 0 1em 0 1em;
-		}
-	
-/*********************************************************************************/
-/* Main Sections                                                                 */
-/*********************************************************************************/
 
-	.main
-	{
+		#banner h2 {
+			font-size: 2.25em;
+		}
+
+		#banner p {
+			font-size: 1.25em;
+		}
+
+/* Main */
+
+	#main {
+		padding: 4em 0 0 0;
 	}
-	
-		.main > header
-		{
-			padding: 3em 20px 3em 20px;
+
+		#main > header {
+			margin: 0 2em 1.5em 2em;
 		}
 
-			.main > header h2
-			{
-				font-size: 1.5em;
+			#main > header h2 {
+				font-size: 2em;
 			}
 
-		.main > .content
-		{
-			padding: 3em 20px 3em 20px;
+			#main > header p {
+				font-size: 1em;
+				padding-bottom: 1em;
+			}
+
+	body.landing #main {
+		padding: 0;
+		margin-top: 0;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 4em 0;
+	}
+
+		#footer .copyright li {
+			border-left: 0;
+			display: block;
+			line-height: 2em;
+			margin-left: 0;
+			padding-left: 0;
 		}
-
-			.main > .content h3
-			{
-				font-size: 1.25em;
-			}

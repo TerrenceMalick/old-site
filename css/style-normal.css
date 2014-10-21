@@ -1,49 +1,27 @@
 /*
-	Tessellate by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
+/* Basic */
 
-	body,input,textarea,select
-	{
-		font-size: 13pt;
-		line-height: 1.65em;
+	body, input, select, textarea {
+		font-size: 11pt;
 	}
 
-	/* Feature Icon */
+/* Header */
 
-		.feature-icon
-		{
-			margin-bottom: 2em;
-		}
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header
-	{
-		padding: 12em 0 12em 0;
+	.dropotron.level-0 {
+		font-size: 1em;
 	}
 
-/*********************************************************************************/
-/* Main Sections                                                                 */
-/*********************************************************************************/
+/* Banner */
 
-	.main
-	{
+	#banner {
+		background-attachment: scroll;
 	}
-	
-		.main > header
-		{
-			padding: 4em 0 4em 0;
-		}
-		
-		.main > .content
-		{
-			padding: 4em 0 4em 0;
+
+		#banner h2 {
+			font-size: 3.5em;
 		}

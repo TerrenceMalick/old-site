@@ -1,167 +1,161 @@
 /*
-	Tessellate by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
+/* Basic */
 
-	.image,
-	.image img,
-	.button	
-	{
+	pre, code {
 		position: relative;
-		-ms-behavior: url('css/ie/PIE.htc');
+		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
-	/* Section/Article */
+/* Form */
 
-		section,
-		article
-		{
-		}
-		
-			section > .last-child,
-			article > .last-child
-			{
-				margin-bottom: 0;
-			}
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
+		line-height: 3em;
+	}
 
-			section.last-child,
-			article.last-child
-			{
-				margin-bottom: 0;
-			}
+	input[type="checkbox"],
+	input[type="radio"] {
+		opacity: 1;
+		z-index: auto;
+	}
 
-	/* List */
-
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-			}
-			
-				ul.icons a
-				{
-					position: relative;
-					-ms-behavior: url('css/ie/PIE.htc');
-					border: solid 1px #ddd;
-				}
-
-	/* Form */
-
-		form
-		{
-		}
-		
-			form input.text,
-			form select,
-			form .select,
-			form textarea
-			{
-				position: relative;
-				-ms-behavior: url('css/ie/PIE.htc');
-				border: solid 1px #ddd;
-				line-height: 1.25em;
-			}
-
-			form select
-			{
-				position: relative;
-			}
-			
-				form select option
-				{
-					color: #000;
-				}
-				
-			form .select
-			{
-			}
-
-				form .select select
-				{
-					width: 100%;
-				}
-
-				form .select:before
-				{
-					display: none;
-				}
-				
-	/* Button */
-		
-		.button.alt
-		{
-			border: solid 1px #ddd;
+		input[type="checkbox"] + label:before,
+		input[type="radio"] + label:before {
+			display: none;
 		}
 
-	/* Feature Icon */
+/* Button */
 
-		.feature-icon
-		{
-			padding-bottom: 0;
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
+	}
+
+		input[type="submit"].alt,
+		input[type="reset"].alt,
+		input[type="button"].alt,
+		.button.alt {
+			border: solid 2px #e5e5e5;
 		}
-		
-			.feature-icon:before,
-			.feature-icon:after
-			{
+
+/* Box */
+
+	.box {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
+	}
+
+		.box .image.featured {
+			margin: 2em 0;
+			width: 100%;
+		}
+
+/* Icon */
+
+	.icon.major {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
+	}
+
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
+	}
+
+		.image img {
+			position: relative;
+			-ms-behavior: url("css/ie/PIE.htc");
+		}
+
+/* Header */
+
+	#header nav > ul > li a {
+		color: #fff;
+		display: inline-block;
+		text-decoration: none;
+		border: 0;
+	}
+
+		#header nav > ul > li a.icon:before {
+			color: #fff;
+			margin-right: 0.5em;
+		}
+
+	#header.alt {
+		color: #fff;
+	}
+
+		#header.alt nav > ul > li a:not(.button).icon:before {
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+		#header.alt nav > ul > li.active a:not(.button) {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+	.dropotron {
+		border: solid 1px #e5e5e5;
+	}
+
+		.dropotron.level-0 {
+			margin-top: 0;
+		}
+
+			.dropotron.level-0:before {
 				display: none;
 			}
 
-			.feature-icon .icon
-			{
-				position: relative;
-				-ms-behavior: url('css/ie/PIE.htc');
-				background: #fff;
-			}
+/* Banner */
 
-				.feature-icon .icon:before
-				{
-					font-size: 6em;
-					color: #3d3d3d;
-				}
-	
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header
-	{
-		background-image:			url('../../images/header.jpg');
-		background-size:			cover;
-		background-position:		auto;
-		background-repeat:			no-repeat;
-		-ms-behavior: url('css/ie/backgroundsize.min.htc');
+	#banner {
+		background-attachment: scroll;
+		background-image: url("../../images/banner.jpg");
+		background-position: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-ms-behavior: url("css/ie/backgroundsize.min.htc");
 	}
 
-/*********************************************************************************/
-/* Main Sections                                                                 */
-/*********************************************************************************/
+		#banner input[type="submit"],
+		#banner input[type="reset"],
+		#banner input[type="button"],
+		#banner .button {
+			border: solid 2px #fff;
+		}
 
-	.main
-	{
+/* Main */
+
+	#main {
+		position: relative;
+		z-index: 1;
 	}
 
-		.main > .content
-		{
-		}
+/* CTA */
 
-		.main > .content.style1
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#412e4c, endColorstr=#a56365);
-		}
+	#cta input[type="text"],
+	#cta input[type="password"],
+	#cta input[type="email"],
+	#cta select,
+	#cta textarea {
+		background: #e89980;
+		border: solid 2px #fff;
+	}
 
-		.main > .content.style2
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#85505f, endColorstr=#384955);
-		}
-
-		.main > .content.style3
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2f394e, endColorstr=#5f796b);
-		}
+	#cta .formerize-placeholder {
+		color: #fff !important;
+	}
