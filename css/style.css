@@ -1237,7 +1237,7 @@
 		}
 
 		#banner h2 {
-			color:#90a4ae;
+			color:#455a64;
 			font-size: 3.5em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
@@ -1245,7 +1245,7 @@
 		}
 
 		#banner h6 {
-			color:#90a4ae;
+			color:#455a64;
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
 		}
@@ -1368,8 +1368,8 @@
 
 	#cta {
 		background: #e89980;
-/*		background-image: url("../images/rsz_pict01.jpg");
-*/		/*      #f9e5df*/
+		/*background-image: url("../images/rsz_pict01.jpg");*/
+		/*      #f9e5df*/
 		color: #f9e5df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
@@ -1434,15 +1434,22 @@
 
 
 /* horizontal */
+.view {
+    position: relative;
+    overflow: hidden;
+    margin-left: auto ;
+  	margin-right: auto ;
+}
+
 .horizontal {
-    /*width: 400px;*/
+    width: 300px;
     position: relative;
     overflow: hidden;
     margin-left: auto ;
   	margin-right: auto ;
 }
 .horizontal .items {
-    width: 3200px;
+    width: 2400px;
     -webkit-animation: hscroll 20s infinite;
     -moz-animation: hscroll 20s infinite;
     -ms-animation: hscroll 20s infinite;
@@ -1461,25 +1468,25 @@
 /* The keyframes calculations are based on assumption of 4 items in the carousel.
 /* You should notice the pattern for your own calculations.
 */
-@-webkit-keyframes hscroll {
+/*@-webkit-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -400px; }
-    50%, 68.75% { margin-left: -800px; }
-    75%, 93.75% { margin-left: -1200px; }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
     100%  { margin-left: 0 }
 }
 @-moz-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -400px; }
-    50%, 68.75% { margin-left: -800px; }
-    75%, 93.75% { margin-left: -1200px; }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
     100%  { margin-left: 0 }
 }
 @-ms-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -400px; }
-    50%, 68.75% { margin-left: -800px; }
-    75%, 93.75% { margin-left: -1200px; }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
     100%  { margin-left: 0 }
 }
 @keyframes hscroll {
@@ -1489,4 +1496,48 @@
     75%, 93.75% { margin-left: -1200px; }
     100%  { margin-left: 0 }
 }
-
+*/
+@-webkit-keyframes hscroll {
+    0%, 9.375%  { margin-left: 0 }
+    12.5%, 21.875% { margin-left: -300px; }
+    25%, 34.375% { margin-left: -600px; }
+    37.5%, 46.875% { margin-left: -900px; }
+    50%, 59.375% { margin-left: -1200px; }
+    62.5%, 71.875% { margin-left: -1500px; }
+    75%, 84.375% { margin-left: -1800px; }
+    87.5%, 96.875% { margin-left: -2100px; }
+    100%  { margin-left: 0 }
+}
+@-moz-keyframes hscroll {
+    0%, 9.375%  { margin-left: 0 }
+    12.5%, 21.875% { margin-left: -300px; }
+    25%, 34.375% { margin-left: -600px; }
+    37.5%, 46.875% { margin-left: -900px; }
+    50%, 59.375% { margin-left: -1200px; }
+    62.5%, 71.875% { margin-left: -1500px; }
+    75%, 84.375% { margin-left: -1800px; }
+    87.5%, 96.875% { margin-left: -2100px; }
+    100%  { margin-left: 0 }
+}
+@-ms-keyframes hscroll {
+    0%, 9.375%  { margin-left: 0 }
+    12.5%, 21.875% { margin-left: -300px; }
+    25%, 34.375% { margin-left: -600px; }
+    37.5%, 46.875% { margin-left: -900px; }
+    50%, 59.375% { margin-left: -1200px; }
+    62.5%, 71.875% { margin-left: -1500px; }
+    75%, 84.375% { margin-left: -1800px; }
+    87.5%, 96.875% { margin-left: -2100px; }
+    100%  { margin-left: 0 }
+}
+@keyframes hscroll {
+    0%, 9.375%  { margin-left: 0 }
+    12.5%, 21.875% { margin-left: -300px; }
+    25%, 34.375% { margin-left: -600px; }
+    37.5%, 46.875% { margin-left: -900px; }
+    50%, 59.375% { margin-left: -1200px; }
+    62.5%, 71.875% { margin-left: -1500px; }
+    75%, 84.375% { margin-left: -1800px; }
+    87.5%, 96.875% { margin-left: -2100px; }
+    100%  { margin-left: 0 }
+}
