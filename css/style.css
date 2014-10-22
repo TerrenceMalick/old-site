@@ -1464,6 +1464,11 @@
     min-height: 5%;
 }
 
+.pdf {
+	width: 850px;
+	margin-left: auto ;
+	margin-right: auto ;
+}
 
 /*
 /* The keyframes calculations are based on assumption of 4 items in the carousel.
