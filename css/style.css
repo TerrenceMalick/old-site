@@ -1465,8 +1465,8 @@
 }
 
 .pdf {
-	width: 850px;
-	height: 1100px;
+	width:850px;
+	position: relative;
 	margin-left: auto ;
 	margin-right: auto ;
 }
