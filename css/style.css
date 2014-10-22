@@ -1435,14 +1435,14 @@
 
 /* horizontal */
 .horizontal {
-    width: 500px;
+    /*width: 400px;*/
     position: relative;
     overflow: hidden;
     margin-left: auto ;
   	margin-right: auto ;
 }
 .horizontal .items {
-    width: 2000px;
+    width: 3200px;
     -webkit-animation: hscroll 20s infinite;
     -moz-animation: hscroll 20s infinite;
     -ms-animation: hscroll 20s infinite;
@@ -1451,38 +1451,42 @@
 .horizontal .item {
     margin: 0;
     float: left;
-    width: 500px;
+    height: auto;
+    min-width: 5%;
+    min-height: 5%;
 }
+
+
 /*
 /* The keyframes calculations are based on assumption of 4 items in the carousel.
 /* You should notice the pattern for your own calculations.
 */
 @-webkit-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -500px; }
-    50%, 68.75% { margin-left: -1000px; }
-    75%, 93.75% { margin-left: -1500px; }
+    25%, 43.75% { margin-left: -400px; }
+    50%, 68.75% { margin-left: -800px; }
+    75%, 93.75% { margin-left: -1200px; }
     100%  { margin-left: 0 }
 }
 @-moz-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -500px; }
-    50%, 68.75% { margin-left: -1000px; }
-    75%, 93.75% { margin-left: -1500px; }
+    25%, 43.75% { margin-left: -400px; }
+    50%, 68.75% { margin-left: -800px; }
+    75%, 93.75% { margin-left: -1200px; }
     100%  { margin-left: 0 }
 }
 @-ms-keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -500px; }
-    50%, 68.75% { margin-left: -1000px; }
-    75%, 93.75% { margin-left: -1500px; }
+    25%, 43.75% { margin-left: -400px; }
+    50%, 68.75% { margin-left: -800px; }
+    75%, 93.75% { margin-left: -1200px; }
     100%  { margin-left: 0 }
 }
 @keyframes hscroll {
     0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: -500px; }
-    50%, 68.75% { margin-left: -1000px; }
-    75%, 93.75% { margin-left: -1500px; }
+    25%, 43.75% { margin-left: -400px; }
+    50%, 68.75% { margin-left: -800px; }
+    75%, 93.75% { margin-left: -1200px; }
     100%  { margin-left: 0 }
 }
 
