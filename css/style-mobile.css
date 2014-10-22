@@ -116,29 +116,6 @@
 		margin-top: 0;
 	}
 
-/* horizontal */
-.horizontal {
-    width: 400px;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto ;
-  	margin-right: auto ;
-}
-.horizontal .items {
-    width: 1600px;
-    -webkit-animation: hscroll 20s infinite;
-    -moz-animation: hscroll 20s infinite;
-    -ms-animation: hscroll 20s infinite;
-    animation: hscroll 20s infinite;
-}
-.horizontal .item {
-    margin: 0;
-    float: left;
-    height: auto;
-    min-width: 5%;
-    min-height: 5%;
-}
-
 
 /* Footer */
 
