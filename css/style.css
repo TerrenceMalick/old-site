@@ -1456,7 +1456,7 @@
     -ms-animation: hscroll 20s infinite;
     animation: hscroll 20s infinite;
 }
-.horizontal .lazy {
+.horizontal .item {
     margin: 0;
     float: left;
     height: auto;
