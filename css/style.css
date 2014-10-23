@@ -1456,7 +1456,7 @@
     -ms-animation: hscroll 20s infinite;
     animation: hscroll 20s infinite;
 }
-.horizontal .item {
+.horizontal .lazy {
     margin: 0;
     float: left;
     height: auto;
@@ -1466,11 +1466,14 @@
 
 .pdf {
 	width:850px;
+	height:1100px;
 	position: relative;
+	text-align: center;
 	margin-left: auto ;
 	margin-right: auto ;
 }
 
+.pdf .h1
 /*
 /* The keyframes calculations are based on assumption of 4 items in the carousel.
 /* You should notice the pattern for your own calculations.
@@ -1548,3 +1551,6 @@
     87.5%, 96.875% { margin-left: -2100px; }
     100%  { margin-left: 0 }
 }
+
+
+
