@@ -577,6 +577,66 @@
 				color: #ffffff;
 			}
 
+		.icon.circle {
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			border: 0;
+			border-radius: 100%;
+			display: inline-block;
+			font-size: 1.25em;
+			height: 2.25em;
+			left: 0;
+			line-height: 2.25em;
+			text-align: center;
+			text-decoration: none;
+			top: 0;
+			width: 2.25em;
+		}
+
+			.icon.circle:hover {
+				top: -0.2em;
+			}
+
+			.icon.circle.fa-envelope-o {
+				background: #AEEA00;
+				color: white;
+			}
+
+				.icon.circle.fa-envelope-o:hover {
+					background: #C6FF00;
+				}
+
+
+			.icon.circle.fa-github-alt {
+				background: #FF5722;
+				color: white;
+			}
+
+				.icon.circle.fa-github-alt:hover {
+					background: #FF3D00;
+				}
+
+			.icon.circle.fa-linkedin-square {
+				background: #00E5FF;
+				color: white;
+			}
+
+				.icon.circle.fa-linkedin-square:hover {
+					background: #18FFFF;
+				}
+
+			.icon.circle.fa-film {
+				background: #E91E63;
+				color: white;
+			}
+
+				.icon.circle.fa-film:hover {
+					background: #FF1744;
+				}
+
 /* Image */
 
 	.image {
@@ -660,6 +720,7 @@
 			ul.icons li {
 				display: inline-block;
 				padding: 0 1.25em 0 0;
+				
 			}
 
 				ul.icons li:last-child {
@@ -671,7 +732,7 @@
 				}
 
 					ul.icons li .icon:before {
-						font-size: 1.75em;
+						font-size: 1.25em;
 					}
 
 		ul.actions {
@@ -1217,7 +1278,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.jpg"), url("../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("../images/banner.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -1322,7 +1383,7 @@
 		text-align: center;
 	}
 
-		#footer .icons a {
+		/*#footer .icons a {
 			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-o-transition: opacity 0.2s ease-in-out;
@@ -1333,7 +1394,7 @@
 
 			#footer .icons a:hover {
 				opacity: 0.75;
-			}
+			}*/
 
 		#footer .copyright {
 			color: #999;
@@ -1366,15 +1427,20 @@
 
 	#cta {
 		background: #e89980;
-		/*background-image: url("../images/rsz_pict01.jpg");*/
-		/*      #f9e5df*/
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/overlay.png"), url("../images/background.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
 		color: #f9e5df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
 
 		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
-			color: inherit;
+			/*color: inherit;*/
+			color: #455a64;
 		}
 
 		#cta form {
@@ -1438,7 +1504,7 @@
 
 
 /* horizontal */
-/*.view {
+.view {
     position: relative;
     overflow: hidden;
     margin-left: auto ;
@@ -1475,7 +1541,28 @@
 	text-align: center;
 	margin-left: auto ;
 	margin-right: auto ;
-}*/
+}
+
+.carousel-item {
+	margin: 0;
+    float: left;
+    position: center;
+    height: auto;
+    min-width: 5%;
+    min-height: 5%;
+}
+
+.test {
+	width: 100px;
+}
+
+.slick-prev {
+    margin-left: 40px;
+  }
+
+.slick-next {
+    margin-right: 40px;
+  }
 
 /*
 /* The keyframes calculations are based on assumption of 4 items in the carousel.
@@ -1556,12 +1643,12 @@
 }
 */
 
-.carousel .item {
+/*.carousel .item {
     background-color: #000;
     width:100%;
     min-width: 5%;
     min-height:5%;
-}
+}*/
 
 
 /*.carousel .loading{
@@ -1579,9 +1666,9 @@
     opacity:0.7;
 }*/
 
-.slide {
+/*.slide {
 	width:400px;
 	position: relative;
 
-}
+}*/
 
