@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	//initializes a lazy loading carousel
 	$('.view').slick({
-	  lazyLoad: 'progressive',
+	  lazyLoad: 'ondemand',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  accessibility: true,
