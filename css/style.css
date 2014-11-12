@@ -606,21 +606,22 @@
 			}
 
 				.icon.circle.fa-envelope-o:hover {
-					background: #C6FF00;
+					background: #EEFF41;
 				}
 
 
 			.icon.circle.fa-github-alt {
-				background: #FF5722;
+				/*background: #FF5722;*/
+				background:#3E2723;
 				color: white;
 			}
 
 				.icon.circle.fa-github-alt:hover {
-					background: #FF3D00;
+					background: #BF360C;
 				}
 
 			.icon.circle.fa-linkedin-square {
-				background: #00E5FF;
+				background: #00BCD4;
 				color: white;
 			}
 
@@ -629,12 +630,12 @@
 				}
 
 			.icon.circle.fa-film {
-				background: #E91E63;
+				background: #607D8B;
 				color: white;
 			}
 
 				.icon.circle.fa-film:hover {
-					background: #FF1744;
+					background: #00BFA5;
 				}
 
 /* Image */
@@ -1042,7 +1043,7 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: #444;
+		background: #37474F;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -1070,6 +1071,11 @@
 				font-weight: 400;
 				border: 0;
 			}
+
+
+		#header .icon:hover {
+			background: #00BCD4;
+		}
 
 		#header nav {
 			height: inherit;
