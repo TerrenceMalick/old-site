@@ -1509,6 +1509,14 @@
     overflow: hidden;
     margin-left: auto ;
   	margin-right: auto ;
+  	/*display: inline-block;*/
+  	width: 500px;
+    height: 667px;
+}
+
+.view img {
+	width: 100%;
+	height: auto;
 }
 
 .horizontal {
@@ -1543,18 +1551,6 @@
 	margin-right: auto ;
 }
 
-.carousel-item {
-	margin: 0;
-    float: left;
-    position: center;
-    height: auto;
-    min-width: 5%;
-    min-height: 5%;
-}
-
-.test {
-	width: 100px;
-}
 
 .slick-prev {
     margin-left: 40px;
@@ -1563,6 +1559,58 @@
 .slick-next {
     margin-right: 40px;
   }
+
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+    /*box-shadow:0px 1px 3px rgba(0,0,0,0.25);*/
+    border-radius:3px;
+    background: transparent;
+    background color: transparent;
+    box-shadow: inset 0 0 0 2px #e5e5e5;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    /*background:#333;*/
+    background color: transparent;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background color: transparent;
+    /* Type */
+    text-decoration:none;
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    width:100%;
+    display:none;
+}
 
 /*
 /* The keyframes calculations are based on assumption of 4 items in the carousel.

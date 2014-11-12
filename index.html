@@ -155,53 +155,67 @@
 				<!-- <ul class="actions">
 					<li><a href="photos.html" class="button alt">Photo Album</a></li>
 				</ul> -->
-				<h2>Photos</h2>
-				<div class="view">
-					<div class="test">
-						<img width="400" src="images/carousel/p_02_1.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_01_1.jpg"/>
-					</div>
-					<!-- <div>
-						<img width="400" data-lazy="images/carousel/p_9.jpg"/>
-					</div> -->
-					<div>
-						<img width="400" data-lazy="images/carousel/p_0_1.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_21_1.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_1.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_2.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_3.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_4.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_5.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_6.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_7.jpg"/>
-					</div>
-					<div>
-						<img width="400" data-lazy="images/carousel/p_8.jpg"/>
-					</div>
-				</div>
 				
-				<button type="button" data-role="none" class="slick-prev" style="display: block;">Previous</button>
-				<button type="button" data-role="none" class="slick-next" style="display: block;">Next</button>
+				<div class="accordion">
+				    <div class="accordion-section">
+				        <a class="accordion-section-title" href="#carousel">Photos</a>
+				   				<div id="carousel" class="accordion-section-content">
+				        			<div class="view">
+										<div>
+											<img src="images/carousel/p_02_1.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_01_1.jpg"/>
+										</div>
+										<!-- <div>
+											<img width="400" data-lazy="images/carousel/p_9.jpg"/>
+										</div> -->
+										<div>
+											<img data-lazy="images/carousel/p_0_1.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_21_1.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_1.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_2.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_3.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_4.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_5.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_6.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_7.jpg"/>
+										</div>
+										<div>
+											<img data-lazy="images/carousel/p_8.jpg"/>
+										</div>
+									
+									</div>
+										<button type="button" data-role="none" class="slick-prev" style="display: block;">Previous</button>
+										<button type="button" data-role="none" class="slick-next" style="display: block;">Next</button>
+				    				</div> <!--end of content-->
+
+				</div>
+
 
 				
+
+
+
+			</div>
+			
+
 				
 			</section>
 
@@ -223,6 +237,37 @@
 
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script type="text/javascript" src="js/lazy-carousel.js"></script>
+		<script>
+			/*$(".toggle_container").hide();
+    
+    			$("p.trigger").click(function(){
+        			$(this).toggleClass("active").next().slideToggle("normal");
+    			});*/
+			$(document).ready(function() {
+			    function close_accordion_section() {
+			        $('.accordion .accordion-section-title').removeClass('active');
+			        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+			    }
+			 
+			    $('.accordion-section-title').click(function(e) {
+			        // Grab current anchor value
+			        var currentAttrValue = $(this).attr('href');
+			 
+			        if($(e.target).is('.active')) {
+			            close_accordion_section();
+			        }else {
+			            close_accordion_section();
+			 
+			            // Add active class to section title
+			            $(this).addClass('active');
+			            // Open up the hidden content panel
+			            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+			        }
+			 
+			        e.preventDefault();
+			    });
+			});
+    	</script>
 
 	</body>
 </html>
