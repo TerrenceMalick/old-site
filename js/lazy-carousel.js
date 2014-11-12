@@ -5,6 +5,17 @@ $(document).ready(function(){
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  accessibility: true,
-	  fade: true
+	  fade: false,
+	  swipeToSlide: true
+	  /*autoplay: true,
+	  autoplaySpeed: 1000,
+	  responsive: [
+	  	{
+	  		breakpoint: 600,
+	  		settings: {
+	  			arrows: false
+	  		}
+	  	}
+	  ]*/
 	});
 });
