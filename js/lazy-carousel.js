@@ -6,7 +6,9 @@ $(document).ready(function(){
 	  slidesToScroll: 1,
 	  accessibility: true,
 	  fade: false,
-	  swipeToSlide: true
+	  swipeToSlide: true, 
+	  autoplaySpeed: 2000
+	  /*autoplay:true*/
 	  /*autoplay: true,
 	  autoplaySpeed: 1000,
 	  responsive: [
@@ -19,3 +21,5 @@ $(document).ready(function(){
 	  ]*/
 	});
 });
+
+
