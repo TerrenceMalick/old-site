@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	//initializes a lazy loading carousel
 	$('.view').slick({
-	  lazyLoad: 'ondemand',
+	  lazyLoad: 'progressive',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  accessibility: true,
 	  fade: false,
 	  swipeToSlide: true, 
-	  autoplaySpeed: 2000
+	  autoplaySpeed: 2500
 	  /*autoplay:true*/
 	  /*autoplay: true,
 	  autoplaySpeed: 1000,
