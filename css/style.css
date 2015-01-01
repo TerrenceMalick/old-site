@@ -1700,6 +1700,17 @@
   }
 
 
+div.centre
+{
+  
+  width:600px;
+  display: block;
+  margin:0px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 
 /*
